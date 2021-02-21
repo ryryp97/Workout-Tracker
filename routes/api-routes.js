@@ -14,6 +14,14 @@ module.exports = router => {
 
     });
 
+    router.get('/api/workouts/range', (req, res)  => {
+        db.Workout.find({}).then(dbWorkout => {
+            res.json(dbWorkout);
+        }).catch(err => {
+            res.json(err);
+        });
+    });
+
     router.put('/api/workouts/:id', (req, res)  => {
         var id = req.params.id;
         var data = req.body;
@@ -35,14 +43,4 @@ module.exports = router => {
             res.json(err);
         });
     });
-
-    router.get('/api/workouts/range', (req, res)  => {
-        db.Workout.find({}).then(dbWorkout => {
-            res.json(dbWorkout);
-        }).catch(err => {
-            res.json(err);
-        });
-    });
-
-
 };

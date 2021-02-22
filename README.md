@@ -12,6 +12,8 @@ The intended functionality of the app includes displaying burgers in the databas
 ![Alt Text](/public/assets/images/exercise.png)
 ![Alt Text](/public/assets/images/stats.png)
 
+Currently, the live application is not displaying the data from the database.
+
 To run this application locally, first you must download the this repository and heninitialize the MongoDB database using the seeds.js file.  Then you can install the dependencis and run the application.
 
 Alternatively, you can access the application at this link: [Workout-Tracker](https://nameless-fjord-56907.herokuapp.com/)
